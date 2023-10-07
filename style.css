@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(23, 24, 25);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.header__search {
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+}
+
+.main {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.movies__card {
+    cursor: pointer;
+    position: relative;
+}
+
+.movies__card:hover .movies__img-item {
+    opacity: 1;
+}
+
+.movies__img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.movies__img-item {
+    width: 100%;
+    opacity: .8;
+    height: 360px;
+}
+
+.movies__text {
+    max-width: 250px;
+}
+
+.movies__card-dcr {
+    color: #dfc14a;
+}
+
+.movies__card-rating {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: rgb(23, 24, 25);
+    border-radius: 50%;
+}
+
+.movies__card-rating_orange {
+    border: 1px solid orange;
+}
+
+.movies__card-rating_green {
+    border: 1px solid green;
+}
+
+.movies__card-rating_red {
+    border: 1px solid red;
+}
