@@ -94,3 +94,61 @@ a {
 .movies__card-rating_red {
     border: 1px solid red;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
+    transition: width 2s;
+}
+
+.modal_show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background-color: #1a191f;
+    color: white;
+    padding: 16px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5);
+}
+
+.modal__img {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.modal__info {
+    margin-left: 20px;
+}
+
+.modal__btn-close {
+    padding: 5px;
+    margin: 10px;
+    align-self: center;
+}
+
+.modal__info-site {
+    color: #dfc14a;
+}
+
+ul li {
+    padding: 5px;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
